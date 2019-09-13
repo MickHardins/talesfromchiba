@@ -4,18 +4,31 @@
   
   <url>
     <loc>https://mickhardins.github.io/talesfromchiba/authors/admin/</loc>
+    <lastmod>2019-09-13T23:52:41+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mickhardins.github.io/talesfromchiba/authors/</loc>
+    <lastmod>2019-09-13T23:52:41+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mickhardins.github.io/talesfromchiba/categories/</loc>
+    <loc>https://mickhardins.github.io/talesfromchiba/post/hello-world/</loc>
+    <lastmod>2019-09-13T23:52:41+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mickhardins.github.io/talesfromchiba/post/</loc>
+    <lastmod>2019-09-13T23:52:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mickhardins.github.io/talesfromchiba/</loc>
+    <lastmod>2019-09-13T23:52:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mickhardins.github.io/talesfromchiba/categories/</loc>
   </url>
   
   <url>
@@ -32,10 +45,6 @@
   
   <url>
     <loc>https://mickhardins.github.io/talesfromchiba/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mickhardins.github.io/talesfromchiba/</loc>
   </url>
   
 </urlset>
