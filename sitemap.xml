@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mickhardins.github.io/talesfromchiba/about/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://mickhardins.github.io/talesfromchiba/authors/admin/</loc>
     <lastmod>2019-09-13T23:52:41+02:00</lastmod>
   </url>
@@ -25,6 +29,10 @@
   <url>
     <loc>https://mickhardins.github.io/talesfromchiba/</loc>
     <lastmod>2019-09-13T23:52:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mickhardins.github.io/talesfromchiba/about/</loc>
   </url>
   
   <url>
