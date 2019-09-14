@@ -5,12 +5,25 @@
     <link>https://mickhardins.github.io/talesfromchiba/authors/mickhardins/</link>
       <atom:link href="https://mickhardins.github.io/talesfromchiba/authors/mickhardins/index.xml" rel="self" type="application/rss+xml" />
     <description>Tales from Chiba</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 13 Sep 2019 23:52:41 +0200</lastBuildDate>
     <image>
       <url>https://mickhardins.github.io/talesfromchiba/img/icon-192.png</url>
       <title>Tales from Chiba</title>
       <link>https://mickhardins.github.io/talesfromchiba/authors/mickhardins/</link>
     </image>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://mickhardins.github.io/talesfromchiba/post/hello-world/</link>
+      <pubDate>Fri, 13 Sep 2019 23:52:41 +0200</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/post/hello-world/</guid>
+      <description>&lt;p&gt;Hello 🌍!&lt;/p&gt;
+
+&lt;p&gt;This is my the first blog post, and if things go as planned it won&amp;rsquo;t be the last.&lt;/p&gt;
+
+&lt;p&gt;The whole site is a work-in-progress, at least until I get acquainted with Hugo and the Academic theme.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
