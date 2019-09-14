@@ -3,16 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mickhardins.github.io/talesfromchiba/authors/mickhardins/</loc>
-    <lastmod>2019-09-13T23:52:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mickhardins.github.io/talesfromchiba/authors/</loc>
-    <lastmod>2019-09-13T23:52:41+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mickhardins.github.io/talesfromchiba/post/hello-world/</loc>
     <lastmod>2019-09-13T23:52:41+02:00</lastmod>
   </url>
@@ -28,7 +18,19 @@
   </url>
   
   <url>
+    <loc>https://mickhardins.github.io/talesfromchiba/authors/mickhardins/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mickhardins.github.io/talesfromchiba/authors/</loc>
+  </url>
+  
+  <url>
     <loc>https://mickhardins.github.io/talesfromchiba/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mickhardins.github.io/talesfromchiba/mickhardins/</loc>
   </url>
   
   <url>
