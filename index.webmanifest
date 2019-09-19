@@ -2,8 +2,8 @@
   "name": "Tales from Chiba",
   "short_name": "Tales from Chiba",
   "lang": "en-us",
-  "theme_color": "#3f51b5",
-  "background_color": "#3f51b5",
+  "theme_color": "#EBBF4C",
+  "background_color": "#EBBF4C",
   "icons": [{
     "src": "img/icon-192.png",
     "sizes": "192x192",
