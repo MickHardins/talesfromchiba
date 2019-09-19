@@ -5,12 +5,20 @@
     <link>https://mickhardins.github.io/talesfromchiba/tags/</link>
       <atom:link href="https://mickhardins.github.io/talesfromchiba/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 20 Sep 2019 00:25:28 +0200</lastBuildDate>
     <image>
       <url>https://mickhardins.github.io/talesfromchiba/img/icon-192.png</url>
       <title>Tags</title>
       <link>https://mickhardins.github.io/talesfromchiba/tags/</link>
     </image>
+    
+    <item>
+      <title>android</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/android/</link>
+      <pubDate>Fri, 20 Sep 2019 00:25:28 +0200</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/android/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
