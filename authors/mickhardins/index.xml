@@ -52,7 +52,7 @@
 var maxRadius = 32, 
     padding = 1, 
     margin = {top: -maxRadius, right: -maxRadius, bottom: -maxRadius, left: -maxRadius},
-    width = 720 - margin.left - margin.right,
+    width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var k = 1, 
@@ -61,7 +61,7 @@ var k = 1,
     newCircle = bestCircleGenerator(maxRadius, padding);
 
 var svg = d3.select(&#34;#prova&#34;).append(&#34;svg&#34;)
-    .attr(&#34;width&#34;, 720)
+    .attr(&#34;width&#34;, &#34;100%&#34;)
     .attr(&#34;height&#34;, height)
   .append(&#34;g&#34;)
     .attr(&#34;transform&#34;, &#34;translate(&#34; + margin.left + &#34;,&#34; + margin.top + &#34;)&#34;);
