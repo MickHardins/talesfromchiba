@@ -5,7 +5,7 @@
     <link>https://mickhardins.github.io/talesfromchiba/tags/</link>
       <atom:link href="https://mickhardins.github.io/talesfromchiba/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 20 Sep 2019 00:25:28 +0200</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 30 Oct 2019 01:36:56 +0100</lastBuildDate>
     <image>
       <url>https://mickhardins.github.io/talesfromchiba/img/icon-192.png</url>
       <title>Tags</title>
@@ -13,10 +13,42 @@
     </image>
     
     <item>
+      <title>atms</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/atms/</link>
+      <pubDate>Wed, 30 Oct 2019 01:36:56 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/atms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>climate-changes</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/climate-changes/</link>
+      <pubDate>Wed, 30 Oct 2019 01:36:56 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/climate-changes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>energy-saving</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/energy-saving/</link>
+      <pubDate>Wed, 30 Oct 2019 01:36:56 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/energy-saving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>android</title>
       <link>https://mickhardins.github.io/talesfromchiba/tags/android/</link>
       <pubDate>Fri, 20 Sep 2019 00:25:28 +0200</pubDate>
       <guid>https://mickhardins.github.io/talesfromchiba/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Magic the Gathering</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/magic-the-gathering/</link>
+      <pubDate>Fri, 20 Sep 2019 00:25:28 +0200</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/magic-the-gathering/</guid>
       <description></description>
     </item>
     
