@@ -33,7 +33,7 @@ Unfortunately, I didn&#39;t reach some sort of universal truth: the light came f
 
 
 &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;And banks said: Let there be ligth.&lt;/h4&gt;
+  &lt;h4&gt;And banks said: Let there be light.&lt;/h4&gt;
   
 &lt;/figcaption&gt;
 
@@ -50,7 +50,7 @@ To answer, first we need to know how many ATMs are out there. I started by searc
 
 &lt;p&gt;&lt;figure&gt;&lt;img src=&#34;images/map_atm_3.jpeg&#34; alt=&#34;Atm city map&#34;&gt;&lt;/figure&gt;&lt;/p&gt;
 
-&lt;p&gt;Sadly the total count of the result was not shown in the mobile app, and to get it from the desktop version you are have to to click the next arrow over and over, until you reach the end of the results (really, Google?).
+&lt;p&gt;Sadly the total count of the result was not shown in the mobile app, and to get it from the desktop version you have to to click the next arrow over and over, until you reach the end of the results (really, Google?).
 A smarter approach to know the total count of ATMs in an area was using Google maps API, but the same location pinpoint can refer to a bank with multiple ATMs.
 &lt;figure&gt;&lt;img src=&#34;images/atm_3.jpeg&#34; alt=&#34;3 is better than one&#34;&gt;&lt;/figure&gt;&lt;/p&gt;
 
