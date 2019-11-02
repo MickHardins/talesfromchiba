@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>co2 emission | Tales from Chiba</title>
+    <link>https://mickhardins.github.io/talesfromchiba/tags/co2-emission/</link>
+      <atom:link href="https://mickhardins.github.io/talesfromchiba/tags/co2-emission/index.xml" rel="self" type="application/rss+xml" />
+    <description>co2 emission</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 30 Oct 2019 01:36:56 +0100</lastBuildDate>
+    <image>
+      <url>https://mickhardins.github.io/talesfromchiba/img/icon-192.png</url>
+      <title>co2 emission</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/co2-emission/</link>
+    </image>
+    
+    <item>
+      <title>A button can save a lot of energy</title>
+      <link>https://mickhardins.github.io/talesfromchiba/post/atm_waste_of_energy/</link>
+      <pubDate>Wed, 30 Oct 2019 01:36:56 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/post/atm_waste_of_energy/</guid>
+      <description>&lt;p&gt;A few days ago I was walking at night in the city going back home. I was very sleepy and tired, looking forward to reach my home one step after the other, when suddenly I felt enlightened.
+Unfortunately, I didn&#39;t reach some sort of universal truth: the light came from an ATM.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;images/atm.jpeg&#34; alt=&#34;&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;And banks said: Let there be light.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+&lt;!-- ![Atm lights](images/atm.jpeg) --&gt;
+
+&lt;p&gt;The two screens were on, even if there was nobody except me passing by. Always on, 24h showing information that nobody reads.
+On my way back home I counted 5 other ATM, so a total of 6 in my 1 km trip.&lt;/p&gt;
+
+&lt;p&gt;The next day I started wondering: how much energy are we wasting by keeping those screens on even if nobody is using them?
+To answer, first we need to know how many ATMs are out there. I started by searching on Google Maps in the city area and got this:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;images/map_atm_3.jpeg&#34; alt=&#34;Atm city map&#34;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Sadly the total count of the result was not shown in the mobile app, and to get it from the desktop version you have to to click the next arrow over and over, until you reach the end of the results (really, Google?).
+A smarter approach to know the total count of ATMs in an area was using Google maps API, but the same location pinpoint can refer to a bank with multiple ATMs.
+&lt;figure&gt;&lt;img src=&#34;images/atm_3.jpeg&#34; alt=&#34;3 is better than one&#34;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Doing a bit of research I found out this:
+&lt;figure&gt;&lt;img src=&#34;images/total_atm.png&#34; alt=&#34;Total ATMs in the world&#34;&gt;&lt;/figure&gt;
+There are &lt;strong&gt;3.24 million&lt;/strong&gt; ATMs out there!&lt;/p&gt;
+
+&lt;!-- non funziona la visualizzazione lista, controllare --&gt;
+
+&lt;p&gt;To calculate the amount of energy needed to keep all those screens turned on, I made some estimates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The screens are usually quite old, so I thought a &lt;a href=&#34;https://www.tomshardware.com/reviews/lcd-backlight-led-cfl,2683-3.html&#34;&gt;LCD TFT of 2009&lt;/a&gt; can be a good approximation. &lt;strong&gt;&lt;em&gt;The energy consumption for that monitor is 31W&lt;/em&gt;&lt;/strong&gt;. This seems quite reasonable given what I could find &lt;a href=&#34;https://www.quora.com/How-much-is-the-total-power-supply-consumption-of-an-ATM-machine&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://www.quora.com/What-is-the-average-daily-power-consumed-by-an-ATM&#34;&gt;here&lt;/a&gt;, and accounts for ~ 12% of the total energy required.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;The average screen size is 15 inches.&lt;/em&gt;&lt;/strong&gt; Again &lt;a href=&#34;http://www.indooratm.com/monimax5300ce.html&#34;&gt;reasonable&lt;/a&gt;, and probably round down approximation since some ATMs like the ones in the photo have more than one screen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now a bit of math!&lt;/p&gt;
+
+&lt;p&gt;Hourly energy consumption of 1 ATM:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[E_h = Power \cdot time =  31 \,W \cdot 1 h = 31 \,Wh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Daily energy consumption of 1 ATM:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ E_{day} = 31 \,Wh \cdot  24 = 744 \,Wh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Yearly energy consumption of 1 ATM:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ E_{year} = 744 \,Wh \cdot  365 = 271560 \,Wh = 271,56 \,kWh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Yearly energy consumption of all ATMs:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ E_w = 271,56\, kWh \cdot  3,24 \cdot  10^6 = 879854400\,kWh \approx 8,8 \cdot 10^8 \, kWh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Pretty huge amount of energy. The next question is: What are the emissions of &lt;span  class=&#34;math&#34;&gt;\( CO_2 \)&lt;/span&gt; to produce this energy? &lt;!-- inserire highlight ---&gt;&lt;/p&gt;
+
+&lt;p&gt;The following table is taken from &lt;a href=&#34;https://www.parliament.uk/documents/post/postpn268.pdf&#34;&gt;here&lt;/a&gt;, and while being a bit old (data are from 2006) gives us some ideas.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Generation Source&lt;/th&gt;
+&lt;th&gt;kg &lt;span  class=&#34;math&#34;&gt;\( CO_2 \)&lt;/span&gt; per kWh&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Open Cycle Gas Turbine&lt;/td&gt;
+&lt;td&gt;0,5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Closed Cycle Gas Turbine&lt;/td&gt;
+&lt;td&gt;0,5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Oil&lt;/td&gt;
+&lt;td&gt;0,65&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Coal&lt;/td&gt;
+&lt;td&gt;0,9&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Nuclear&lt;/td&gt;
+&lt;td&gt;0,005&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Pumped Storage&lt;/td&gt;
+&lt;td&gt;0,02&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Non Pumped Storage Hydro&lt;/td&gt;
+&lt;td&gt;0,005&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Wind Onshore&lt;/td&gt;
+&lt;td&gt;0,00464&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Wind Offshore&lt;/td&gt;
+&lt;td&gt;0,00525&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Solar&lt;/td&gt;
+&lt;td&gt;0,058&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Based on 2014 data from &lt;a href=&#34;https://ourworldindata.org&#34;&gt;Our world in data&lt;/a&gt; (the only I could find) we can obtain an estimation, of the energy obtained from the various sources.
+
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/energy_prod.png&#34; &gt;
+
+&lt;img src=&#34;images/energy_prod.png&#34; alt=&#34;&#34; &gt;
+&lt;/a&gt;
+
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ E_{coal} = E_w \cdot 41,1\% = 3,61 \cdot 10^8\, kWh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ E_{oil} = E_w \cdot 3,6\% = 3,16 \cdot 10^7 \, kWh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ E_{gas} = E_w \cdot 21,92\% = 1,92 \cdot 10^8 \, kWh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ E_{nuclear} = E_w \cdot 10,78\% = 9,48 \cdot 10^7 \, kWh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ E_{hydro} = E_w \cdot 16,49\% = 1,45 \cdot 10^8 \, kWh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ E_{other} = E_w \cdot 6,10\% = 5,36 \cdot 10^7\, kWh \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;And finally, we can obtain the total kg of &lt;span  class=&#34;math&#34;&gt;\( CO_2 \)&lt;/span&gt; emitted in the atmosphere to keep ATMs screens always on. The wind and solar emission per kWh are averaged and counted in the 6,1% of the &lt;em&gt;other renewables&lt;/em&gt; category and the hydro ones (pumped and non pumped storage) in the hydroelectric category.&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ Emission_{coal} = 3,61 \cdot 10^8\, kWh \cdot 0,9\, \frac{kg}{kWh} = 3,25 \cdot 10^8\,kg \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ Emission_{oil} = 3,16 \cdot 10^7\, kWh \cdot 0,65\, \frac{kg}{kWh} = 2,05 \cdot 10^7\,kg \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ Emission_{gas} = 1,92 \cdot 10^8\, kWh \cdot 0,5\, \frac{kg}{kWh} = 9,64 \cdot 10^7\,kg \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ Emission_{nuclear} = 9,48 \cdot 10^7 \, kWh \cdot 0,005\, \frac{kg}{kWh} = 4,74 \cdot 10^5\,kg \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ Emission_{hydro} = 1,45 \cdot 10^8 \, kWh \cdot 0,0125\, \frac{kg}{kWh} = 1,81 \cdot 10^6\,kg  \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ Emission_{other} = 5,36 \cdot 10^7 \, kWh \cdot 0,02263\, \frac{kg}{kWh} = 1,21 \cdot 10^6\,kg \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;So, summing up every contribution we get:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ Emission_{total} \approx 4,46 \cdot  10^5\, \frac{ton}{year} \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;So each year we are sending &lt;strong&gt;at least&lt;/strong&gt; 446&#39;060 tons of &lt;span  class=&#34;math&#34;&gt;\( CO_2 \)&lt;/span&gt; in the atmosphere. I want to stress that I strongly believe this value is a &lt;strong&gt;round down estimation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Repeating the calculation considering 42 W as power consumption (40% increase) of screens, we get &lt;span  class=&#34;math&#34;&gt;\(\approx  6,04 \cdot 10^8\, \frac{ton}{year} \)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;This last value could seem unreasonable but I suspect that the actual average power consumption of ATM screens can be higher than 31 W.&lt;/p&gt;
+
+&lt;p&gt;Either way, it&#39;s a lot of energy wasted for no reason. To put things in perspective, the per capita annual emission of &lt;span  class=&#34;math&#34;&gt;\( CO_2 \)&lt;/span&gt; is 4,8 tons.&lt;/p&gt;
+
+&lt;p&gt;That means that all those screens are emitting each year the same &lt;span  class=&#34;math&#34;&gt;\( CO_2 \)&lt;/span&gt; amount of 92&#39;930 and 125&#39;904 people for the first and second estimated power consumption respectively.&lt;/p&gt;
+
+&lt;p&gt;The city of Pisa had 90&#39;488 residents in 2017.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;By activating ATM screens only when the user press a button, or using a proximity sensor, we could save more than a whole year of Pisa&#39;s citizens emission.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;span class=&#34;markup-quote&#34;&gt;Which is the same as saying that we could save 3,23% of Rome&amp;rsquo;s yearly emission.&lt;/span&gt;
+
+&lt;p&gt;It might seem a little step, but as the old saying reads: &lt;em&gt;take care of the pennies and the pounds will take care of themselves.&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo shutdown -h now
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
