@@ -211,7 +211,9 @@ There are &lt;strong&gt;3.24 million&lt;/strong&gt; ATMs out there!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;By activating ATM screens only when the user press a button, or using a proximity sensor, we could save more than a whole year of Pisa&#39;s citizens emission.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Which is the same as saying that we could save 3,23% of Rome&#39;s yearly emission. It might seem a little step, but as the old saying reads: &lt;em&gt;take care of the pennies and the pounds will take care of themselves.&lt;/em&gt;&lt;/p&gt;
+&lt;span class=&#34;markup-quote&#34;&gt;Which is the same as saying that we could save 3,23% of Rome&amp;rsquo;s yearly emission.&lt;/span&gt;
+
+&lt;p&gt;It might seem a little step, but as the old saying reads: &lt;em&gt;take care of the pennies and the pounds will take care of themselves.&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo shutdown -h now
 &lt;/code&gt;&lt;/pre&gt;
