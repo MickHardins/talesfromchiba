@@ -5,12 +5,52 @@
     <link>https://mickhardins.github.io/talesfromchiba/tags/</link>
       <atom:link href="https://mickhardins.github.io/talesfromchiba/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 30 Oct 2019 01:36:56 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 03 Feb 2020 22:55:57 +0100</lastBuildDate>
     <image>
       <url>https://mickhardins.github.io/talesfromchiba/img/icon-192.png</url>
       <title>Tags</title>
       <link>https://mickhardins.github.io/talesfromchiba/tags/</link>
     </image>
+    
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/artificial-intelligence/</link>
+      <pubDate>Mon, 03 Feb 2020 22:55:57 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GRU</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/gru/</link>
+      <pubDate>Mon, 03 Feb 2020 22:55:57 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/gru/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keras</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/keras/</link>
+      <pubDate>Mon, 03 Feb 2020 22:55:57 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/keras/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural networks</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/neural-networks/</link>
+      <pubDate>Mon, 03 Feb 2020 22:55:57 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensorflow-2</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/tensorflow-2/</link>
+      <pubDate>Mon, 03 Feb 2020 22:55:57 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/tags/tensorflow-2/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>atms</title>

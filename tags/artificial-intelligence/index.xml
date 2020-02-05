@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artificial Intelligence | Tales from Chiba</title>
+    <link>https://mickhardins.github.io/talesfromchiba/tags/artificial-intelligence/</link>
+      <atom:link href="https://mickhardins.github.io/talesfromchiba/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <description>Artificial Intelligence</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 03 Feb 2020 22:55:57 +0100</lastBuildDate>
+    <image>
+      <url>https://mickhardins.github.io/talesfromchiba/img/icon-192.png</url>
+      <title>Artificial Intelligence</title>
+      <link>https://mickhardins.github.io/talesfromchiba/tags/artificial-intelligence/</link>
+    </image>
+    
+    <item>
+      <title>Inspecting GRU gates using Tensorflow 2.0 and Keras</title>
+      <link>https://mickhardins.github.io/talesfromchiba/post/gru_gate_inspection/</link>
+      <pubDate>Mon, 03 Feb 2020 22:55:57 +0100</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/post/gru_gate_inspection/</guid>
+      <description>&lt;p&gt;In the past weeks I&#39;ve been working on some neural network models on a regression task.
+Given the temporal nature of my data, a recurrent models is a good fit and I decided to use a GRU layer in my architecture.&lt;/p&gt;
+
+&lt;p&gt;If you&#39;re reading this, it&#39;s likely that you already know what a Gated Recurrent Unit is, if not, then &lt;a href=&#34;https://en.wikipedia.org/wiki/Gated_recurrent_unit&#34;&gt;this&lt;/a&gt; and &lt;a href=&#34;http://colah.github.io/posts/2015-08-Understanding-LSTMs/&#34;&gt;this&lt;/a&gt; will give you context.&lt;/p&gt;
+
+&lt;p&gt;Long story short, a GRU is a recurrent neural network defined by the following equations:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ z_{t} = σ_{g}(W_{z}x_{t}+U_{z}h_{t-1}+b_{z}) \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ r_{t} = σ_{g}(W_{r}x_{t}+U_{r}h_{t-1}+b_{r}) \]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[ h_{t} = z_{t}\odot h_{t-1}+(1-z_{t})\odot \phi_{h}(W_{h}x_{t}+U_{h}(r_{t}\odot h_{t-1})+b_{h})\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Here $z_{t}$ and $r_{t}$ are the update and reset gate. They control how much of the current candidate state get mixed with the previous one, before outputting it.&lt;/p&gt;
+
+&lt;p&gt;For debugging reasons, other than the sequences of the outputs and the last state I wanted to look at gate&#39;s activations.
+Unfortunately despite my expectations that wasn&#39;t a straightforward thing to do, so I&#39;m writing this to help others that may have the same need.&lt;/p&gt;
+
+&lt;p&gt;I tried the naive approach first: modify &lt;code&gt;recurrent.py&lt;/code&gt; of Tensorflow to save the tensors. Of course it didn&#39;t work.&lt;/p&gt;
+
+&lt;p&gt;Next try: create a custom Layer with two class variables to keep the two lists of tensors. No luck. You can&#39;t access those variables later using a getter method (a.k.a. If you don&#39;t read all the code, you can&#39;t expect things to work)&lt;/p&gt;
+
+&lt;p&gt;After this two attempts I followed Tensorflow&#39;s docs and started to properly implement a subclass of &lt;code&gt;GRUCell&lt;/code&gt;:.&lt;/p&gt;
+
+&lt;p&gt;I ended up with this code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Imports ...
+# Imports ...
+
+class CustomGRUCell(tf.keras.layers.GRUCell):
+
+    def __init__(self, units, **kwargs):
+        super(CustomGRUCell, self).__init__(units, **kwargs)
+
+    def build(self, input_shape):
+        super(CustomGRUCell, self).build(input_shape)
+
+    def call(self, inputs, states, training=None):
+        h_tm1 = states[0]  # previous memory
+            # Same GRUCell code, omitted for brevity
+            # ....
+
+            z = self.recurrent_activation(x_z + recurrent_z)
+            r = self.recurrent_activation(x_r + recurrent_r)
+
+            if self.reset_after:
+                recurrent_h = r * recurrent_h
+            else:
+                recurrent_h = K.dot(r * h_tm1,
+                                    self.recurrent_kernel[:, 2 * self.units:])
+
+            hh = self.activation(x_h + recurrent_h)
+            # previous and candidate state mixed by update gate
+            h = z * h_tm1 + (1 - z) * hh
+    
+        return (h, r, z), [h] # you can return a tuple as next stete
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To access gate values we need to build a model that will output them:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+input_tensor = tf.keras.layers.Input(shape=(timesteps, features),
+                                     name=&amp;quot;input&amp;quot;)
+cell = CustomGRUCell(256)
+s_gru, states = tf.keras.layers.RNN(cell,
+                                    return_sequences=True,
+                                    return_state=True)(input_tensor)
+out = tf.keras.layers.Dense(1, activation=&#39;linear&#39;, name=&amp;quot;out&amp;quot;)(s_gru[0])
+model = tf.keras.models.Model(inputs=input_tensor,
+                              outputs=[out, s_gru[1], s_gru[2]])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since we are using a multi-output model we must remember to train only on the dense output, without adding the loss values calculated for &lt;code&gt;s_gru[1]&lt;/code&gt; and &lt;code&gt;s_gru[2]&lt;/code&gt; to the total loss:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;model.compile(optimizer=optimizer, loss=&#39;mae&#39;, loss_weights=[1., 0., 0.])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;tensorflow-1x&#34;&gt;Tensorflow 1.x&lt;/h3&gt;
+
+&lt;p&gt;Originally I was trying to achieve this with TF 1.x, that&#39;s why I said it wasn&#39;t straightforward. Look at this StackOverflow answers: &lt;a href=&#34;https://stackoverflow.com/questions/39716241/tensorflow-getting-all-states-from-a-rnn&#34;&gt;one&lt;/a&gt; and &lt;a href=&#34;https://stackoverflow.com/questions/45528146/tensorflow-create-a-custom-sub-class-of-lstm-cell-with-a-dfferent-call-functi&#34;&gt;two&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I had problem in defining the &lt;code&gt;output_size&lt;/code&gt; and &lt;code&gt;state_size&lt;/code&gt; properties of the cell: &lt;code&gt;output_size&lt;/code&gt; was a read-only property and I was getting errors when using &lt;code&gt;@property&lt;/code&gt; annotation in the subclass.&lt;/p&gt;
+
+&lt;p&gt;The key is specifying correctly the &lt;code&gt;state_size&lt;/code&gt;, that can be a tuple, to sort things.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo shutdown -h now
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

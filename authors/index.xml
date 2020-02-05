@@ -5,7 +5,7 @@
     <link>https://mickhardins.github.io/talesfromchiba/authors/</link>
       <atom:link href="https://mickhardins.github.io/talesfromchiba/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 30 Oct 2019 01:36:56 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 03 Feb 2020 22:55:57 +0100</lastBuildDate>
     <image>
       <url>https://mickhardins.github.io/talesfromchiba/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>https://mickhardins.github.io/talesfromchiba/authors/mickhardins/</link>
-      <pubDate>Wed, 30 Oct 2019 01:36:56 +0100</pubDate>
+      <pubDate>Mon, 03 Feb 2020 22:55:57 +0100</pubDate>
       <guid>https://mickhardins.github.io/talesfromchiba/authors/mickhardins/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m an Artificial Intelligence student, currently working on my master degree thesis. I&amp;rsquo;m a curious person and try to learn new things every time I can.
 Passionate about computer science in general, and in AI and Cybersecurity in particular.&lt;/p&gt;
@@ -24,7 +24,18 @@ Passionate about computer science in general, and in AI and Cybersecurity in par
 
 &lt;p&gt;I value privacy a lot, that&amp;rsquo;s why you won&amp;rsquo;t probably ever see a picture of me in this space, but feel free to contact me for questions or suggestions.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://mickhardins.github.io/talesfromchiba/infos/&#34;&gt;View more informations&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mickhardins.github.io/talesfromchiba/infos/&#34; target=&#34;_blank&#34;&gt;View more informations&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mickhardins.github.io/talesfromchiba/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mickhardins.github.io/talesfromchiba/authors/admin/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.&lt;/p&gt;
 </description>
     </item>
     
